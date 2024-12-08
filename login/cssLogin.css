@@ -1,0 +1,106 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    padding-top: 40px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: -5px;
+    background-color: #6a11cb;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.tab.active {
+    background-color: white;
+    color: #6a11cb;
+}
+
+.form-container {
+    display: none;
+    padding: 20px;
+}
+
+.form-container.active {
+    display: block;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    border-radius: 20px;
+    border: none;
+    background-color: #6a11cb;
+    color: #fff;
+    padding: 12px 45px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.show-password {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+.show-password input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.login-link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+}
+
+.login-link a {
+    color: #FF416C;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

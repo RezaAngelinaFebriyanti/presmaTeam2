@@ -1,0 +1,131 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f5f6fa;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #5828E2;
+    color: white;
+    font-size:36;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    position: fixed;
+    left: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+}
+
+.main-content {
+    flex-grow: 1;
+    margin-left: 250px;
+    padding: 30px;
+    overflow-y: auto;
+    background-color: #f5f6fa;
+}
+
+.header {
+    background-color: #2A6BF8;
+    color: white;
+    text-align:center;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(37, 117, 252, 0.1);
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #5828E2;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    margin-left: 127px;
+    padding-bottom:50px;
+}
+
+/* Sidebar menu hover effect */
+.sidebar ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input, .form-group select, .form-group button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group button {
+    background-color: #2A6BF8;
+    color: white;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #1a4db4;
+}
+
+.toggle-icon {
+    font-size: 20px; /* Size of the icon */
+}
+
+.toggle-sidebar {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Ensure it's above other elements */
+}

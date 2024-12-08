@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../img/bg.png');
+}
+
+.container {
+  background-color: #fff;
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid #000;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+    background-color: #0000FF;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.button {
+    padding: 5px 10px;
+    background-color: #0000FF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.search-container {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.search-container input {
+  padding: 5px;
+  width: 80%;
+  margin-right: 5px;
+}
+
+.search-container button {
+  padding: 5px 10px;
+}
+
+.login-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.status-buttons {
+  display: flex;
+  justify-content: center; /* Pusatkan tombol secara horizontal */
+  align-items: center; /* Pusatkan tombol secara vertikal */
+  gap: 20px; /* Jarak antar tombol */
+}
+
+.status-button {
+  background-color: #6a11cb; /* Warna dasar tombol */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow tombol */
+}
+
+.status-button:hover {
+  background-color: #5a0e9d; /* Warna saat hover */
+}
+
+.status-button:active {
+  transform: scale(0.95); /* Efek mengecil */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Efek cekung */
+}
+
+/* Warna tombol berubah menjadi hijau saat diklik */
+.status-button.clicked {
+  background-color: #28a745; /* Hijau */
+  box-shadow: none; /* Hapus shadow saat diklik */
+  color: #fff; /* Pastikan teks tetap terlihat */
+}
